@@ -8,7 +8,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/my-pet-app', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost/pros-animal', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('Error connecting to MongoDB:', err));
 
